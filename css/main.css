@@ -13,8 +13,36 @@
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
+}
+h1 {
+  font-size: 2.25em;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  margin: 0 20px;
+}
+h2 {
+  font-size: 1.1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: white;
+  margin: 0 20px;
+}
+p {
+  font-size: .875em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: white;
+  margin: 0 20px;
+}
+li {
+  color: white;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 1.1em;
 }
 
 /*
@@ -86,6 +114,243 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+/***** HEADER *****/
+  header {
+    height: 115px;
+    margin: 0;
+    background-color: #202322;
+  }
+  header img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 220px;
+    padding: 20px 0 0 0;
+  }
+  header .full-width {
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: column wrap;
+   margin: 0 auto;
+   width: 100%;
+  }
+  header .half-width-first {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-flow: row wrap;
+   margin: 0 auto;
+   width: 100%;
+   padding-bottom: 10px;
+   border-bottom: solid #3a3a3a 1px;
+  }
+  header .half-width-second {
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav ul {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-flow: row wrap;
+   margin: 0 auto;
+   padding-right: 30px;
+  }
+  nav ul li {
+    padding: 10px 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+
+/***** HERO-CONTAINER *****/
+  #hero-container {
+    background-image: url("../img/hero-image-mobile.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 500px;
+  }
+  #hero-container h1 {
+    padding: 55px 0px;
+    width: 70%;
+  }
+
+/***** JOIN *****/
+#join {
+  background-color: #527158;
+  height: 340px;
+}
+#join h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+#join p {
+  font-weight: 200;
+}
+button {
+  display: block;
+  float: left;
+  margin: 15px 20px;
+  background-color: #2a423a;
+  width: 90%;
+  height: 45px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: none;
+  margin-top: 5px;
+  font-size: 1.1em;
+}
+form {
+  display: block;
+  float: left;
+  margin: 15px 20px;
+  width: 90%;
+  height: 45px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  border: none;
+  background-color: white;
+  margin-top: 5px;
+}
+input {
+  outline: none;
+  border: none;
+  margin: 12px;
+  opacity: 50%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: .875em;
+  width: 90%;
+}
+
+/***** AMENITIES *****/
+#amenities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex-flow: column wrap;
+  background-image: url("../img/amenities-mobile.jpg");
+  background-size: cover;
+  padding-bottom: 70px;
+}
+#amenities h1 {
+  padding: 50px 0;
+  margin: 0 20px;
+  font-size: 1.875em;
+  line-height: 1.2em;
+}
+#about-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  padding-right: 20px;
+}
+#about-items .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+}
+.item img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+.item p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: .875em;
+  width: 50%;
+  padding: 0 75px;
+  text-align: center;
+}
+/***** TEAM *****/
+#team {
+  background-color: #2a423a;
+  padding-bottom: 45px;
+}
+#team h1 {
+  font-size: 1.875em;
+  line-height: 1.2em;
+  padding: 50px 0 30px;
+  font-weight: 400;
+}
+#team img {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 20px;
+  width: 88%;
+}
+#team .caption {
+  margin: 20px 0;
+}
+#team p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: .875em;
+}
+
+/***** FOOTER *****/
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  margin: 0 auto;
+  background-color: #202322;
+  text-align: center;
+}
+footer h2 {
+  margin: 50px 0 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: .875em;
+}
+footer .social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 0 auto;
+}
+footer .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 0 17px;
+}
+.copyright {
+  margin: 50px 0 10px;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -175,9 +440,230 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 700px) {
+  /***** BASE STYLES ****/
+  html {
+    font-size: 20px;
+  }
+  h1, h2, p {
+    margin: 0 50px;
+  }
+  /***** HEADER ****/
+  header {
+    height: 80px;
+    padding: 10px 0;
+  }
+  header .full-width {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100%;
+  }
+  header .half-width-first {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    border-bottom: none;
+    width: 50%;
+  }
+  header .half-width-second {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-right: 7%;
+    width: 43%;
+  }
+  header img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 50px;
+  }
+  /***** HERO CONTAINER ****/
+  #hero-container {
+    background-image: url("../img/hero-image-tablet.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  #hero-container h1 {
+    width: 70%;
+  }
+  /***** JOIN ****/
+  #join {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    height: fit-content;
+    padding-bottom: 30px;
+  }
+  span.find-out-more h2 {
+    margin: 0 20px;
+  }
+  .half-width {
+    width: 50%;
+  }
+  button, form {
+    height: 30px;
+    margin-top: 5px;
+    width: 75%;
+  }
+  button {
+    font-size: .875em;
+  }
+  input {
+    margin: 5px;
+  }
+  /****** AMENITITES ******/
+  #amenities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100%;
+  }
+  #amenities h1 {
+    padding-bottom: 0;
+    margin: 0 50px;
+  }
+  .about-items {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 0 50px;
+    width: 100%;
+    padding-right: 50px;
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px 0;
+  }
+  .item .icon {
+    height: 120px;
+  }
+  /****** TEAM *****/
+  #team h1 {
+    width: 75%;
+  }
+  .full-width {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    margin: 0 auto;
+  }
+  #team h2, #team p {
+    margin: 0 0;
+    padding: 0 0;
+    width: 90%;
+  }
+  #team img {
+    margin: 0 50px;
+    width: 80%;
+  }
+  #team p {
+    margin-top: 10px;
+  }
+  #team .caption {
+    margin: 0;
+  }
+  /***** FOOTER *****/
+  footer .full-width {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  footer .half-width {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    flex-flow: column wrap;
+    width: 50%;
+  }
 }
+@media only screen and (min-width: 1100px) {
+  html {
+    font-size: 24px;
+  }
+  h1, h2, p {
+    margin: 0 100px;
+  }
+  /***** HEADER *****/
+  header img {
+    margin: 0 100px;
+  }
+  header .half-width-second {
+    padding-right: 8%;
+    width: 42%;
+  }
+  nav ul li {
+    font-size: .9em;
+    padding-left: 50px;
+  }
+  /***** HERO CONTAINER ****/
+  #hero-container h1 {
+    width: 55%;
+    padding-top: 20px;
+  }
+  #hero-container {
+    background-image: url("../img/hero-image.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  /***** JOIN ****/
+  button, form {
+    height: 50px;
+  }
+  input {
+    margin: 8px;
+  }
+  /***** AMENITIES *****/
+  #amenities h1 {
+    margin: 0 100px;
+  }
+  .about-items {
+    width: 100%;
+    padding-right: 100px;
+  }
+  .item {
+    width: 28%;
+    padding-right: 30px;
+  }
+  .item p {
+    width: 90%;
+  }
+  /***** TEAM *****/
+  #team img {
+    margin-left: 100px;
+  }
+  #team h1 {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 28px;
+  }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
